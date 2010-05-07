@@ -5,9 +5,9 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "dp"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "niclas.nilsson@factor10.com"
+    gem.summary = %Q{A simpler way to do debug and trace prints}
+    gem.description = %Q{A simpler way to do debug and trace prints}
+    gem.email = "niclas@niclasnilsson.se"
     gem.homepage = "http://github.com/niclasnilsson/dp"
     gem.authors = ["Niclas Nilsson"]
     gem.add_development_dependency "rspec", ">= 1.2.9"

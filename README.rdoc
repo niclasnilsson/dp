@@ -1,6 +1,32 @@
 = dp
 
-Description goes here.
+Tired of writing long debug prints like this? 
+
+  puts "name=#{name}, @age=#{@age}, team=#{team.inspect}"
+
+or perhaps you're writing terse debug prints like this
+
+  p name, @age, team
+
+but have a hard time reading the, since you don't see which is what in the output? 
+In that case, d.p can help.
+
+This example:
+
+  require 'dp'
+  
+  def some_method
+    name = 'Niclas'
+    @age = 38
+    team = ['Niclas', 'Johan', 'Hans']
+    
+    # Call d.p with a comma-separated string of expressions you'd like to see printed.
+    d.p "name, @age, team"
+  end
+
+will give this output:
+
+  name="Niclas", @age=38, team=["Niclas", "Johan", "Hans"]
 
 == Note on Patches/Pull Requests
  
