@@ -11,5 +11,11 @@ describe "d.p" do
     some_method
     @stdout_string.string.should == 'name="Niclas", @age=38, team=["Niclas", "Johan", "Hans"]' + "\n"
   end
+  
+  it "should keep whitespace in result" do
+    whitespace_method
+    @stdout_string.string.should == 'whitespace_string="  foo "' + "\n"
+  end
+  
 end
 

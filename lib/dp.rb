@@ -27,7 +27,7 @@ class Binding
     variables = debug_str.split(',').map { |v| v.strip }
     variables.each do |var|
       result = Kernel.eval var, self
-      str += "#{separator}#{var}=#{result.inspect.strip}"
+      str += "#{separator}#{var}=#{result.inspect}"
       separator = ', '
     end
     puts str
