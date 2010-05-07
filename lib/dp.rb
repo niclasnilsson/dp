@@ -11,8 +11,6 @@ class Binding
   #
   # ==== Examples
   #
-  #   # Decrement the post_count column for the record with an id of 5
-  #   DiscussionBoard.decrement_counter(:post_count, 5)
   #   def some_method
   #     name = 'Niclas'
   #     @age = 38
