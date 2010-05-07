@@ -1,7 +1,15 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require File.expand_path(File.dirname(__FILE__) + '/regular_methods')
 
-describe "Dp" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+describe "d.p" do
+  before do
+    @stdout_string = StringIO.new
+    $stdout = @stdout_string
+  end
+  
+  it "should simplify debug prints" do
+    some_method
+    @stdout_string.string.should == 'name="Niclas", @age=38, team=["Niclas", "Johan", "Hans"]' + "\n"
   end
 end
+
